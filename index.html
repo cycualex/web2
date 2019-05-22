@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>個人履歷</title>
+		<style>
+			@import url("index.css");
+		</style>
+	</head>
+	<body>
+		<header class="bg">
+		<p><b><h1 class="col">黃昱齊</h1></b></p>
+		<p><i><h3 class="coll">「樂觀、開朗、不計較」</h3></p></i>
+		<a class="github" href ="https://cycualex.github.io/web/">個人網站</a>
+		</header>
+		<section>
+		<p><h2>程式能力</h2></p>
+		<p>HTML</p>
+		<div class="container">
+			<div class="skills html">55%</div>
+		</div>
+		<p>CSS</p>
+		<div class="container">
+			<div class="skills css">50%</div>
+		</div>
+		<p>JavaScript</p>
+		<div class="container">
+			<div class="skills js">40%</div>
+		</div>
+		<p>.NET</p>
+		<div class="container">
+			<div class="skills net">60%</div>
+		</div>
+		<p>Java</p>
+		<div class="container">
+			<div class="skills java">45%</div>
+		</div>
+		</section>
+		<section>
+		<h2>個人經歷</h2>
+		<button class="accordion">大一上</button>
+		<div class="panel">
+			<p><textarea cols="96" rows="6">剛進大一的我對於校園周遭的事物還不了解，所以我決定暫時還不要加進社團，以交朋友為第一優先，再來就是課業的部分，因為是大一剛進的新生，而且高中也是讀普通科，所以對資訊程式方面也不大了解，所以從一開始成績就比高職生還來的不理想，不過數學方面就強了許多，只能說各有各的優缺點，這學期程式是學.NET，一開始覺得很難，但如果是現在大二的我，就算內容有些忘記，稍微看一下應該也能馬上學起來。所以這學期除了交朋友之外，就比較沒有特別的事情了。</textarea></p>
+		</div>
+		<button class="accordion">大一下</button>
+		<div class="panel">
+			<p><textarea cols="96" rows="4">這學期最主要就是學java和運動會，不過最深刻的是英聽的話劇比賽，因為我們資管系擠進前十名，我覺得很厲害了，雖然我不在台上，但還是覺得挺感動的。課業方面，有企資通、java、微積分，這些主科好險都有過，不過我自己認為java還是學得不夠熟，尤其是物件還是不太了解，需額外找時間去複習了。</textarea></p>
+		</div>
+		<button class="accordion">大二上</button>
+		<div class="panel">
+			<p><textarea cols="96" rows="4">這是剛當完兵後的一學期，這學期已經無法維持allpass的記錄了，可能是因為當完兵想休息所以有點放縱自己，最大的科目網路程式居然沒過，一方面是因為期末專案比重太高，我又剛好不太會網程就被當掉了，現在我已經好好反省過了，要利用大三上的時間努力去彌補回來。</textarea></p>
+		</div>
+		<button class="accordion">大二下</button>
+		<div class="panel">
+			<p><textarea cols="96" rows="5">這學期可以說是我目前最累的時期，雖然選修課不多，但必修個幾乎都要做專案，尤其是多謀體、資料庫，另外加上選修課的大數據，說真的期末真的快要吃不消了，四課專題5月開始要再6月份前弄好，我自己覺得有專題可以，但加上其他零零碎碎的功課就真的完全沒時間弄，所以有些功課真的就只能草草完成，重要的還是期末專案，當作業太多的時候只能這樣用帕斯卡原理來做比較利益，目前也正在趕期末專題中。</textarea></p>
+		</div>
+		</section>
+
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+			for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+			panel.style.display = "none";
+		} else {
+			panel.style.display = "block";
+	}
+	});
+}
+		</script>
+	</body>
+</html>
